@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
  */
 @Test
 public class MagentoTest {
-	public void posCredentials() {
+	public void posCredentials() throws Exception {
 		String url = "http://www.magento.com";
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
@@ -28,7 +28,8 @@ public class MagentoTest {
 
 		Logout l2 = new Logout(driver);
 		l2.clickOnLogout();
-
+		
+		Thread.sleep(5000);
 		driver.quit();
 
 	}
