@@ -29,7 +29,7 @@ public class MagentoTest {
 		Logout l2 = new Logout(driver);
 		l2.clickOnLogout();
 		
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		driver.quit();
 
 	}
