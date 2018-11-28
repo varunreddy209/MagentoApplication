@@ -14,7 +14,7 @@ import org.testng.annotations.Test;
 public class MagentoTest {
 	public void posCredentials() throws Exception {
 		String url = "http://www.magento.com";
-		WebDriver driver = new FirefoxDriver();
+		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get(url);
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
